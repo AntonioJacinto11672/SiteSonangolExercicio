@@ -1,4 +1,112 @@
 * {
- box-sizing: 0;
- 
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Times New Roman', Times, serif    ;
+}
+
+header {
+    background: url("/first/assets/img/P2L4533-Selected-Copia-scaled.jpg");
+    height: 100vh;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.header-wrapper { 
+   
+    margin: 0  auto;
+    width: 1350px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+ nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 85px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    position: sticky;
+    top: 0;
+ }
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    column-gap: 10px;
+}
+ a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-primary {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(255, 208, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;   
+    box-shadow: 2px 2px #ccc;
+}
+.btn-secondary {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #db0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;   
+}
+
+
+/* Content Header */
+
+div.header-content {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 20px;
+}
+
+.header-content  h1{
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+
+.header-content  p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.card {
+    background-color: #db0000;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.card > div {  
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+.card > div:nth-of-type(3) {   
+    border-left: 5px solid #fff;
+} 
